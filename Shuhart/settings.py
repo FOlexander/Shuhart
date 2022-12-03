@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-!_4f-bd2xu327!d+b083(!$l6vjlp*=leu3goa8$ip2$v#f0qo
 DEBUG = True
 
 ALLOWED_HOSTS = []
+LOGIN_REDIRECT_URL = "index"
+LOGOUT_REDIRECT_URL = "index"
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'table.apps.TableConfig'
 ]
 
 MIDDLEWARE = [

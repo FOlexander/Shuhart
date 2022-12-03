@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <form action="" method="POST">
+    {% csrf_token %}
+        <input type="file">
+    </form>
+{% endblock %}

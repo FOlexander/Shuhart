@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% if form.errors.error %}
+        <p>{{ form.errors.error }}</p>
+    {% endif %}
+    <form action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit"> Submit</button>
+    </form>
+{% endblock %}
