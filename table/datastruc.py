@@ -29,8 +29,6 @@ def read_file(filename, current_user):
     s.get_chart(title=filename)
     csvadress = filename
     plotadress = filename.replace('csv', 'png')
-
-    # print('plotadress', plotadress, '\n', 'chartname', chartname)
     p = Tables(user=current_user, user_table=csvadress, user_model=plotadress)
     p.save()
-    # print(s.get_chart())
+
